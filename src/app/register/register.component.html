@@ -1,0 +1,34 @@
+<app-banner title="Register"></app-banner>
+<div class="container mt-5">
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="firstname">firstname</label>
+                <input type="text" name="first_name" formControlName="first_name" id="firstname" class="form-control">
+            </div>
+
+            <div class="form-group col-6">
+                <label for="lastname">lastname</label>
+                <input type="text" name="last_name" formControlName="last_name" id="lastname" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="email">email</label>
+                <input type="text" name="email" formControlName="email" id="email" class="form-control">
+            </div>
+
+            <div class="form-group col-6">
+                <label for="password">password</label>
+                <input type="password" name="password" formControlName="password" id="password" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-6">
+                <input type="submit" value="Register" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>
